@@ -28,9 +28,17 @@ router.get('/home', function(req, res, next) {
     res.render('home', { username: `${req.session.username}` });
   }
   else {
-    res.redirect('');
+    res.redirect('/');
   }
 
+});
+
+// LOGOUT
+router.get('/logout', function(req, res, next) {
+  req.session.destroy(function(err) {
+    if (true) console.log(err);
+    res.redirect('/');
+  })
 });
 
 
