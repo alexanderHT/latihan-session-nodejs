@@ -25,3 +25,6 @@ Simple login web app, that implement client and server side. where the client si
 | http://localhost:3007/users          | GET    | Get all data users |
 | http://localhost:3007/users/register | POST   | Register new user  |
 | http://localhost:3007/users/login    | POST   | Login user         |
+
+# Using GitKraken
+testing GitKraken, create a new branch
